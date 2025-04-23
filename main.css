@@ -175,25 +175,33 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    max-width: 50%;
+    max-width: 500px;
 }
 
 .skills_block {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
 }
 
-.skills_item {}
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 
+}
 .skills_text {
     display: flex;
     gap: 2em;
+    letter-spacing: 1px;
 }
 
 .skills_title {
     font-size: var(--fz-xs);
     font-weight: 500;
     line-height: 1.5;
+    text-transform: uppercase;
 }
 
 .skills_percent {
@@ -209,15 +217,57 @@ body {
 }
 
 .skills_level {
-background: var(--color-accent);
-height: 100%;
+    background: var(--color-accent);
+    height: 100%;
 }
-.skills_level:nth-child(1) {
+
+#lvl75 {
     width: 75%;
 }
-.skills_level:nth-child(2) {
+
+#lvl90 {
     width: 90%;
 }
-.skills_level:nth-child(3) {
+
+#lvl65 {
     width: 65%;
-}  
+}
+.stats{
+    background: var(--color-accent);
+
+}
+.stats_wrap{
+    padding: 50px 0;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.stats_item {
+color: var(--color-white);
+display: grid;
+grid-template-columns: auto 1fr;
+grid-template-areas: 
+"icon num"
+"icon text";
+column-gap:  0.5em;
+}
+.stats_icon{
+    aspect-ratio: 1 / 1;
+grid-area: icon;
+font-size: 36px;
+line-height: 1;
+
+}
+.stats_num{
+grid-area: num;
+font-family: "Montserrat" sans-serif;
+font-size: var(--fz-m);
+font-weight: 500px;
+line-height: 1;
+}
+.stats_text{
+grid-area: text; 
+font-family: "Montserrat" sans-serif;
+font-size: var(--fz-xs);
+font-weight: 500px;
+line-height: 1;
+}
