@@ -271,3 +271,50 @@ font-size: var(--fz-xs);
 font-weight: 500px;
 line-height: 1;
 }
+.image{
+
+}
+.image_wrap{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows:2fr;
+    height: 360px;
+    width: auto;
+    grid-template-areas: 
+    " honey glass tln she"
+    "bag lab cup env";
+
+}
+.image_honey{
+    background: url(./img/g7.jpg) no-repeat;
+    grid-area: honey;
+
+}
+.image_glass{
+    background: url(./img/g5.jpg) no-repeat ;
+    grid-area: glass;
+}   
+.image_tln{
+    background: url(./img/g1.jpg);
+    grid-area:tln ;
+}
+.image_she{
+    background: url(./img/g8.jpg);
+    grid-area: she;
+}
+.image_bag{
+    background: url(./img/g3.jpg);
+    grid-area: bag;
+}
+.image_lab{
+    background: url(./img/g9.jpg);
+    grid-area: lab;
+}
+.image_cup{
+    background: url(./img/);
+    grid-area: cup;
+}
+.image_env{
+    background: url(./img/g1.jpg);
+    grid-area: env;
+}
