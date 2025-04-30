@@ -393,3 +393,42 @@ body {
 .work_button>i {
     translate: 3px;
 }
+
+.apps {
+    background: var(--color-grey-4);
+    padding: 80px 0;
+}
+
+.apps_wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5em;
+
+}
+
+.apps_item {
+    text-align: center;
+    width: 70%;
+    justify-self: center;
+}
+
+.apps_icon {
+    font-size: var(--fz-xl);
+    color: var(--color-grey-3);
+}
+
+.apps_title {
+    font-size: var(--fz-xs);
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.apps_text {
+    font-size: var(--fz-s);
+    color: var(--color-grey-3);
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Nunito Sans", sans-serif;
+}
