@@ -791,16 +791,6 @@ button {
     .skills_left {
         margin: auto;
     }
-
-    .stats_wrap {
-        display: inline-grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2em;
-        position: relative;
-        left: 50%;
-        translate: -50% 0;
-    }
-
     .gallery_grid {
         grid-template-columns: repeat(3, 1fr);
     }
